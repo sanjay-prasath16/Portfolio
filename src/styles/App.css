@@ -1,0 +1,853 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply box-border p-0 m-0 overflow-x-hidden;
+    }
+
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply mt-0 ml-0 mr-0 mb-headerHeight font-bodyFont text-normalFontSize bg-bodyColor text-textColor;
+    }
+
+    h1,h2,h3,h4 {
+        @apply text-titleColor font-fontSemiBold;
+    }
+
+    ul {
+        @apply list-none;
+    }
+
+    li {
+        @apply flex flex-col w-28;
+    }
+
+    img {
+        @apply max-w-full;
+    }
+
+    .navLink {
+        @apply flex flex-row;
+    }
+
+    .section {
+        @apply pt-8 pr-0 pl-0 pb-16; 
+    }
+
+    .sectionTitle {
+        @apply text-h1FontSize
+    }
+
+    .sectionSubtitle {
+        @apply block text-smallFontSize mb-mb3
+    }
+
+    .sectionTitle,.sectionSubtitle {
+        @apply text-center;
+    }
+
+    .container {
+        @apply max-w-3xl ml-mb105 mr-mb105;
+    }
+
+    .ulGrid {
+        @apply grid gap-6;
+    }
+
+    .icon {
+        @apply mr-1;
+    }
+
+    .header {
+        @apply w-full fixed bottom-0 left-0 z-zFixed bg-bodyColor;
+    }
+
+    .navClose,.navBtns {
+        @apply mt-1;
+    }
+
+    .nav {
+        max-width: 968px;
+        @apply h-headerHeight flex sm:justify-between items-center;
+    }
+
+    .navLogo,.navToggle {
+        @apply text-titleColor font-fontMedium
+    }
+
+    .navLogo:hover {
+        @apply text-firstColor
+    }
+
+    .navToggle {
+        font-size: 1.1rem;
+        @apply cursor-pointer absolute right-5 bottom-4;
+    }
+
+    .navToggle:hover {
+        @apply text-firstColor;
+    }
+
+    @media screen and (max-width: 767px) {
+        .navMenu {
+            @apply fixed left-0 w-full bg-bodyColor pt-8 pr-6 pb-16 pl-6 rounded-t-3xl rounded-r-3xl;
+            box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+            transition: .3s;
+            bottom: -100%;
+        }
+    }
+
+    .navList {
+        @apply grid-cols-3 gap-8;
+    }
+
+    .navLink {
+        @apply flex flex-col items-center text-smallFontSize text-titleColor font-fontMedium cursor-pointer;
+    }
+
+    .navLink:hover {
+        @apply text-firstColor;
+    }
+
+    .active {
+        @apply text-firstColor;
+    }
+
+    .navClose {
+        @apply absolute right-6 bottom-2 cursor-pointer text-firstColor hover:text-firstColorAlt;
+    }
+}
+
+/* Home */
+
+@layer base {
+    .homeContainer {
+        @apply gap-4;
+    }
+
+    .homeContent {
+        grid-template-columns: .5fr 3fr;
+        @apply items-center;
+    }
+
+    .homeSocial {
+        @apply grid gap-y-8 text-xl;
+        grid-template-columns: max-content;
+    }
+
+    .homeSocial a {
+        @apply ml-1;
+    }
+
+    .buttonIcon {
+        @apply flex flex-row w-32 cursor-pointer;
+    }
+
+    .buttonFlex {
+        @apply flex flex-row;
+    }
+
+    .homeSocialIcon {
+        @apply text-xl text-firstColor
+    }
+
+    .homeSocialIcon:hover {
+        @apply text-firstColorAlt
+    }
+
+    .homeBlob {
+        @apply w-52 fill-firstColor;
+    }
+
+    .homeBlobImg {
+        @apply w-48;
+    }
+
+    .homeData {
+        grid-column: 1/3;
+    }
+
+    .homeTitle {
+        @apply text-bigFontSize;
+    }
+
+    .homeSubtitle {
+        @apply text-h3FontSize text-textColor font-fontMedium mb-mb75;
+    }
+
+    .homeDescription {
+        @apply mb-mb2 text-justify;
+    }
+
+    .homeScroll {
+        @apply hidden
+    }
+
+    .homeScrollButton {
+        @apply text-firstColor;
+        transition: .3s;
+    }
+
+    .homeScrollButton:hover {
+        transform: translateY(.25rem);
+    }
+
+    .homeScrollMouse {
+        @apply text-xl;
+    }
+
+    .homeScrollName {
+        @apply text-titleColor font-fontMedium mr-mb25 mt-1;
+    }
+
+    .homeScrollArrow {
+        @apply text-lg;
+    }
+
+    .button {
+        @apply inline-block bg-firstColor text-white font-fontMedium flex-row;
+        padding: 6px;
+        border-radius: .5rem;
+    }
+
+    .button:hover {
+        @apply bg-firstColorAlt
+    }
+
+    .buttonIcon {
+        @apply ml-mb5;
+        transition: .3s;
+    }
+
+    .buttonFlex {
+        @apply inline-flex items-center;
+    }
+}
+
+/* About */
+
+@layer base {
+    .aboutImg {
+        @apply w-52 justify-self-center;
+        border-radius: .5rem;
+    }
+
+    .aboutDescription {
+        @apply mb-mb25 text-justify;
+    }
+
+    .aboutInfo {
+        @apply flex justify-evenly mb-mb205;
+    }
+
+    .aboutInfoTitle {
+        @apply text-h2FontSize font-fontSemiBold text-titleColor;
+    }
+
+    .aboutInfoName {
+        @apply text-smallerFontSize;
+    }
+
+    .aboutInfoTitle, .aboutInfoName {
+        @apply block text-center;
+    }
+
+    .aboutButtons {
+        @apply flex justify-center;
+    }
+}
+
+/* Skills */
+
+@layer base {
+    .skillsContainer {
+        @apply gap-x-0 m-10;
+    }
+
+    .skillsHeader {
+        @apply flex items-center mb-mb205 cursor-pointer;
+    }
+
+    .skillsIcon, .skillsArrow {
+        @apply text-4xl text-firstColor;
+    }
+
+    .skillsIcon {
+        @apply mr-mb75;
+    }
+
+    .skillsTitle {
+        @apply text-h3FontSize;
+    }
+
+    .skillsSubtitle {
+        @apply text-smallFontSize text-textColorLight;
+    }
+
+    .skillsArrow {
+        @apply ml-auto;
+        transition: .4s;
+    }
+
+    .skillsList {
+        @apply gap-x-6 pl-11;
+    }
+
+    .skillsTitles {
+        @apply flex justify-between mb-mb5;
+    }
+
+    .skillsName {
+        @apply text-normalFontSize font-fontMedium;
+    }
+
+    .skillsBar, .skillsPercentage {
+        height: 5px;
+        border-radius: .25rem;
+    }
+
+    .skillsBar {
+        @apply bg-firstColorLighter;
+    }
+
+    .skillsPercentage {
+        @apply block bg-firstColor;
+    }
+
+    .skillsHtml {
+        width: 90%;
+    }
+
+    .skillsCss {
+        width: 60%;
+    }
+
+    .skillsJs {
+        width: 70%;
+    }
+
+    .skillsReact {
+        width: 80%;
+    }
+
+    .skillsNode {
+        width: 30%;
+    }
+
+    .skillsExpress {
+        width: 25%;
+    }
+
+    .skillsMongo {
+        width: 40%;
+    }
+
+    .skillsSeo {
+        width: 70%;
+    }
+
+    .skillsSem {
+        width: 30%;
+    }
+
+    .skillsSmo {
+        width: 50%;
+    }
+
+    .skillsSmm {
+        width: 30%;
+    }
+
+    .skillsOpen .skillsList {
+        @apply mb-mb205;
+        height: max-content;
+    }
+
+    .skillsClose .skillsList {
+        height: 0;
+    }
+
+    .skillsOpen .skillsArrow {
+        transform: rotate(-180deg);
+    }
+}
+
+/* Qualification */
+
+@layer base {
+    .qualificationTabs {
+        @apply flex justify-evenly mb-mb2;
+    }
+
+    .qualificationButton {
+        @apply text-h3FontSize font-fontMedium cursor-pointer;
+    }
+
+    .qualificationButton:hover {
+        @apply text-firstColor;
+    }
+
+    .qualificationIcon {
+        @apply text-3xl mr-mb25;
+    }
+
+    .qualificationData {
+        @apply grid gap-6;
+        grid-template-columns: 1fr max-content 1fr;
+    }
+
+    .qualificationTitle {
+        @apply text-normalFontSize font-medium;
+    }
+
+    .qualificationSubtitle {
+        @apply inline-block text-smallFontSize mb-mb1;
+    }
+
+    .qualificationCalendar {
+        @apply flex text-smallFontSize text-textColorLight;
+    }
+
+    .calendar {
+        @apply mt-0.5 mr-1;
+    }
+
+    .qualificationRounder {
+        @apply inline-block bg-firstColor rounded-full;
+        height: 13px;
+        width: 13px;
+    }
+
+    .qualificationLine {
+        @apply block bg-firstColor absolute;
+        width: 1px;
+        transform: translate(6px, -7px);
+    }
+
+    @media screen and (min-width: 379px) {
+        .qualificationLine {
+            height: 27%;
+        }
+    }
+
+    @media screen and (min-width: 379px) {
+        .qualificationLine {
+            height: 23%;
+        }
+    }
+
+    @media screen and (min-width: 625px) {
+        .qualificationLine {
+            height: 30%;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .qualificationLine {
+            height: 16%;
+        }
+    }
+}
+
+/* Projects */
+
+@layer base {
+    .projectTitle {
+        @apply text-h2FontSize justify-center flex;
+    }
+
+    .carousel-container {
+        @apply relative mx-auto overflow-hidden;
+        width: 650px;
+    }
+
+    .carousel {
+        @apply flex scroll-smooth snap-mandatory;
+    }
+
+    .carousel::-webkit-scrollbar {
+        @apply hidden;
+    }
+
+    .carousel > * {
+        @apply snap-start;
+        width: 400px;
+        flex: 0 0 100%;
+        height: 400px;
+    }
+
+    .carousel-button {
+        @apply absolute top-1/2 border-none text-white p-2;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-button.right {
+        @apply right-2;
+    }
+
+    .carousel-link {
+        @apply flex justify-center mt-2;
+    }
+}
+
+/* Contact Me */
+
+@layer base {
+    .container.contactContainer {
+        @apply grid;
+        grid-template-columns: 30% 58%;
+        gap: 12%;
+        width: 66%;
+    }
+
+    .contactOptions {
+        @apply flex flex-col;
+        gap: 1.2rem;
+    }
+
+    .contactOption {
+        @apply bg-firstColor flex flex-col items-center;
+        border: 1px solid transparent;
+        padding: 1.2rem;
+        border-radius: 1.2rem;
+    }
+
+    .contactOption:hover {
+        @apply bg-firstColorAlt;
+    }
+
+    .contactOptionIcon {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contactOption a {
+        @apply inline-block;
+        font-size: 0.8rem;
+        margin-top: 0.7rem;
+    }
+
+    form {
+        @apply flex flex-col;
+        gap: 1.2rem;
+    }
+
+    input, textarea {
+        @apply w-full border-firstColor;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        background: transparent;
+        border: 2px solid;
+        resize: none;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .container.contactContainer {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .container.contactContainer {
+            width: 90%;
+        }
+    }
+}
+
+/* Footer */
+
+@layer base {
+    .footer {
+        @apply pt-8
+    }
+
+    .footerContainer {
+        @apply gap-y-14;
+    }
+
+    .footerBg {
+        @apply bg-firstColorSecond;
+        padding: 2rem 0 3rem;
+    }
+
+    .footerTitle {
+        @apply text-h1FontSize font-semibold mb-mb25;
+    }
+
+    .footerSubtitle {
+        @apply text-smallFontSize font-semibold;
+    }
+
+    .footerLinks {
+        @apply flex flex-col gap-y-6 font-semibold;
+    }
+
+    .footerLink:hover {
+        @apply text-firstColorLighter
+    }
+
+    .footerSocials {
+        @apply flex flex-row;
+    }
+
+    .footerSocial {
+        @apply text-h2FontSize mr-mb105;
+    }
+
+    .footerSocial:hover {
+        @apply text-firstColorLighter;
+    }
+
+    .footerCopy {
+        @apply text-smallerFontSize flex justify-center text-textColorLight mt-mb3;
+    }
+
+    .footerTitle, .footerSubtitle, .footerLink, .footerSocial {
+        @apply text-white;
+    }
+}
+
+/* Scroll To top */
+
+@layer base {
+    .scrollUp {
+        @apply fixed right-4 bottom-20 bg-firstColor opacity-80 rounded-lg z-zToolTip;
+        padding: .3rem .3rem;
+        transition: .4s;
+    }
+
+    .scrollUp:hover {
+        @apply bg-firstColorAlt
+    }
+
+    .scrollUpIcon {
+        @apply text-2xl text-white;
+    }
+}
+
+/* Scroll Bar */
+
+@layer base {
+    ::-webkit-scrollbar {
+        width: .60rem;
+        @apply bg-scrollBarColor rounded-lg;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-scrollThumbColor rounded-lg;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-textColorLight;
+    }
+}
+
+/* Media Queries */
+
+/* small devices */
+
+@media screen and (max-width: 350px) {
+    .container {
+        @apply ml-mb1 mr-mb1;
+    }
+
+    .navMenu {
+        padding: 2rem .25rem 4rem;
+    }
+
+    .navList {
+        @apply gap-x-0;
+    }
+
+    .homeContent {
+        grid-template-columns: .25fr 3fr;
+    }
+
+    .homeBlob {
+        @apply w-44;
+    }
+
+    .skillsTitle {
+        @apply text-normalFontSize
+    }
+}
+
+/* Medium Devices */
+
+@media screen and (min-width: 568px) {
+    .homeContent {
+        grid-template-columns: max-content 1fr 1fr;
+    }
+
+    .homeData {
+        grid-column: initial;
+    }
+
+    .homeImg {
+        order: 1;
+        justify-self: center;
+    }
+
+    .aboutContainer, .skillsContainer, .footerContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .qualificationContent {
+        @apply grid justify-center;
+        grid-template-columns: .6fr;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        @apply ml-auto mr-auto;
+    }
+
+    body {
+        @apply m-0;
+    }
+
+    .section {
+        padding: 6rem 0 2rem;
+    }
+
+    .sectionSubtitle {
+        @apply mb-16
+    }
+
+    .header {
+        @apply top-0;
+        bottom: initial;
+    }
+
+    .header, .main, .footerContainer {
+        padding: 0 1rem;
+    }
+
+    .nav {
+        @apply gap-x-4;
+        height: 4.5rem;
+    }
+
+    .icon, .navClose, .navToggle {
+        @apply hidden;
+    }
+
+    .navList {
+        @apply grid-cols-6 gap-0;
+    }
+
+    .navMenu {
+        @apply ml-auto;
+    }
+
+    .home {
+        @apply pt-5
+    }
+
+    .homeContainer {
+        @apply gap-y-2;
+    }
+
+    .homeContent {
+        @apply gap-x-8;
+        padding-top: 5.5rem;
+    }
+
+    .homeBlob {
+        @apply w-64
+    }
+
+    .homeScroll {
+        @apply block cursor-pointer;
+    }
+
+    .homeScrollButton {
+        @apply ml-12;
+    }
+
+    .aboutContainer {
+        @apply gap-x-20;
+    }
+
+    .aboutImg {
+        width: 300px;
+    }
+
+    .aboutDescription {
+        text-align: justify;
+    }
+
+    .aboutInfo {
+        @apply justify-between;
+    }
+
+    .aboutButtons {
+        justify-content: initial;
+    }
+
+    .qualificationLine {
+        height: 22%;
+    }
+
+    .qualificationTabs {
+        @apply justify-center;
+    }
+
+    .qualificationButton {
+        @apply mt-0 mr-mb1 mb-0 ml-mb1;
+    }
+
+    .qualificationSections {
+        grid-template-columns: .5fr;
+    }
+
+    .footerContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footerBg {
+        padding: 3rem 0 3.5rem;
+    }
+
+    .footerLinks {
+        @apply flex-row gap-x-5;
+    }
+
+    .footerSocials {
+        @apply justify-self-end;
+    }
+
+    .footerCopy {
+        margin-top: 4.5rem;
+    }
+}
+
+/* Larger Devices */
+
+@media screen and (min-width: 1024px) {
+    .header, .main, .footerContainer {
+        @apply p-0;
+    }
+
+    .home {
+        @apply pt-16;
+    }
+
+    .homeBlob {
+        width: 320px;
+    }
+
+    .qualificationLine {
+        height: 13%;
+    }
+}
