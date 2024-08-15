@@ -520,8 +520,7 @@
     }
 
     .tranding-slider-control {
-        @apply relative flex items-center justify-center;
-        margin-top: -240px;
+        @apply relative flex items-center justify-center top-4;
     }
 
     .tranding-slider-control .swiper-button-next {
@@ -576,7 +575,7 @@
     }
 
     .tranding-slider-control .swiper-pagination {
-        @apply relative w-60 bottom-4
+        @apply relative w-60 mt-6;
     }
 
     .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
@@ -593,7 +592,6 @@
 @layer base {
     .contactTitle {
         @apply text-h1FontSize font-semibold text-black text-center;
-        margin-top: -160px;
     }
 
     .container.contactContainer {

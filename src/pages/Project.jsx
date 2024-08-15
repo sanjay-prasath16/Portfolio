@@ -15,11 +15,11 @@ import '../styles/App.css';
 
 const Project = () => {
   return (
-    <section id="tranding projects">
+    <section className='tranding mt-10' id="projects">
       <div className="container">
         <h3 className="text-center section-heading">Projects</h3>
         <h1 className="text-center section-subHeading">Completed Projects</h1>
-        <div className="container">
+        <div className="container mt-20">
           <Swiper
             effect={'coverflow'}
             grabCursor={true}

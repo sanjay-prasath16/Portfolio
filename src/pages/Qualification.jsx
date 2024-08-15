@@ -62,8 +62,8 @@ const Qualification = () => {
                     <div className="qualificationData">
                         <div></div>
                         <div>
-                            <span className="qualificationRounder"></span>
                             {/* <span className="qualificationLine"></span> */}
+                            <span className="qualificationRounder"></span>
                         </div>
                         <div>
                             <h3 className="qualificationTitle">Secondary School Leaving Certificate</h3>
@@ -80,4 +80,4 @@ const Qualification = () => {
   )
 }
 
-export default Qualification
+export default Qualification;
