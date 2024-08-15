@@ -6,7 +6,7 @@ import '../styles/App.css'
 const Qualification = () => {
   return (
     <section className="qualification section" id="qualification">
-        <h2 className="sectionTitle">Qualification</h2>
+        <h2 className="sectionTitle mt-20">Qualification</h2>
         <span className="sectionSubtitle">My Personal Journey</span>
         <div className="qualificationContainer container">
             <div className="qualificationTabs">

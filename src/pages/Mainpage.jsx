@@ -20,4 +20,4 @@ const Mainpage = () => {
   )
 }
 
-export default Mainpage
+export default Mainpage;

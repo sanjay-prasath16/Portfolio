@@ -6,7 +6,7 @@
 
 @layer base {
     * {
-        @apply box-border p-0 m-0 overflow-x-hidden;
+        @apply box-border p-0 m-0;
     }
 
     html {
@@ -42,7 +42,7 @@
     }
 
     .sectionTitle {
-        @apply text-h1FontSize
+        @apply text-h1FontSize;
     }
 
     .sectionSubtitle {
@@ -459,48 +459,143 @@
 /* Projects */
 
 @layer base {
-    .projectTitle {
-        @apply text-h2FontSize justify-center flex;
+    .container {
+        border: none;
     }
 
-    .carousel-container {
-        @apply relative mx-auto overflow-hidden;
-        width: 650px;
+    .section-heading {
+        @apply text-h1FontSize font-semibold mb-mb25 text-black text-center;
     }
 
-    .carousel {
-        @apply flex scroll-smooth snap-mandatory;
+    @media (max-width: 1440px) {
+        #tranding {
+            padding: 7rem 0;
+        }
     }
 
-    .carousel::-webkit-scrollbar {
-        @apply hidden;
+    #tranding .tranding-slider {
+        @apply relative;
+        height: 52rem;
+        padding: 2rem 0;
     }
 
-    .carousel > * {
-        @apply snap-start;
-        width: 400px;
-        flex: 0 0 100%;
-        height: 400px;
+    @media (max-width: 500px) {
+        #tranding .tranding-slider {
+            height: 45rem;
+        }
     }
 
-    .carousel-button {
-        @apply absolute top-1/2 border-none text-white p-2;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
+    .tranding-slide {
+        @apply relative;
+        width: 37rem;
+        height: 30rem;
     }
 
-    .carousel-button.right {
-        @apply right-2;
+    @media (max-width: 500px) {
+        .tranding-slide {
+            width: 28rem !important;
+            height: 36rem !important;
+        }
+
+        .tranding-slide .tranding-slide-img img {
+            width: 28rem !important;
+            height: 36rem !important;
+        }
     }
 
-    .carousel-link {
-        @apply flex justify-center mt-2;
+    .tranding-slide .tranding-slide-img img {
+        width: 37rem;
+        height: 30rem;
+        border-radius: 2rem;
+        object-fit: cover;
+    }
+
+    .tranding-slide .tranding-slide-content {
+        @apply absolute left-0 top-0 right-0 bottom-0;
+    }
+
+    #tranding .tranding-slide .swiper-slide-shadow-left,
+    #tranding .tranding-slide .swiper-slide-shadow-right {
+        display: none !important;
+    }
+
+    .tranding-slider-control {
+        @apply relative flex items-center justify-center;
+        margin-top: -240px;
+    }
+
+    .tranding-slider-control .swiper-button-next {
+        left: 58% !important;
+        transform: translateX(-58%) !important;
+    }
+
+    @media (max-width: 990px) {
+        .tranding-slider-control .swiper-button-next {
+            left: 70% !important;
+            transform: translateX(-70%) !important;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .tranding-slider-control .swiper-button-next {
+            left: 80% !important;
+            transform: translateX(-80%) !important;
+        }
+    }
+
+    @media (max-width: 990px) {
+        .tranding-slider-control .swiper-button-prev {
+            left: 30% !important;
+            transform: translateX(-30%) !important;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .tranding-slider-control .swiper-button-prev {
+            left: 20% !important;
+            transform: translateX(-20%) !important;
+        }
+    }
+
+    .tranding-slider-control .slider-arrow {
+        @apply w-14;
+        height: 3.5rem;
+        border-radius: 50%;
+        left: 42%;
+        transform: translateX(-42%);
+        filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+    }
+
+    .tranding-slider-control .slider-arrow ion-icon {
+        @apply text-bigFontSize;
+        color: #222224;
+    }
+
+    .tranding-slider-control .slider-arrow::after {
+        content: '';
+    }
+
+    .tranding-slider-control .swiper-pagination {
+        @apply relative w-60 bottom-4
+    }
+
+    .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+        filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+    }
+
+    .tranding-slider-control .swiper-pagination .swiper-pagination-active {
+        background: #ec994b;
     }
 }
 
 /* Contact Me */
 
 @layer base {
+    .contactTitle {
+        @apply text-h1FontSize font-semibold text-black text-center;
+        margin-top: -160px;
+    }
+
     .container.contactContainer {
         @apply grid;
         grid-template-columns: 30% 58%;

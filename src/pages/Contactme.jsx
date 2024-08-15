@@ -17,8 +17,8 @@ const Contactme = () => {
       e.target.reset();
   };
   return (
-    <div className="section">
-      <h2 className="projectTitle">Contact Me</h2>
+    <div className="section" id='contactme'>
+      <h2 className="contactTitle">Contact Me</h2>
       <section className="sectionSubtitle">Get In Touch</section>
       <div className="container contactContainer">
         <div className="contactOptions">

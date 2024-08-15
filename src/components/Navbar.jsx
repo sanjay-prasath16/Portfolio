@@ -24,7 +24,7 @@ const Navbar = () => {
     return (
         <header className="header" id="header">
             <nav className="nav container">
-                <ScrollLink to="Home" smooth={true} duration={100} className='navLogo'>Sanjay</ScrollLink>
+                <ScrollLink to="home" smooth={true} duration={100} className='navLogo' activeClass='active' onClick={closeNavMenu}>Sanjay</ScrollLink>
                 <div className={`navMenu ${isOpen ? 'bottom-0' : ''}`} id='navMenu'>
                     <ul className='navList ulGrid'>
                         <li className='navItem'>

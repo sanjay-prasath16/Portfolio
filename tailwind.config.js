@@ -19,6 +19,8 @@ export default {
         containerColor: '#FFF',
         scrollBarColor: 'hsl(142, 49%, 61%)',
         scrollThumbColor: 'hsl(142, 49%, 41%)',
+        projectPrimary: '#6a59ff',
+        projectBg: '#f5f5f5',
       },
       fontFamily: {
         bodyFont: '"Poppins", sans-serif',
