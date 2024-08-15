@@ -15,7 +15,7 @@ const Skills = () => {
         <section className="skills section" id="skills">
             <h2 className="sectionTitle">Skills</h2>
             <section className="sectionSubtitle">My Tech Stack</section>
-            <div className="skillsContainer conatainer ulGrid">
+            <div className="skillsContainer container ulGrid">
                 <div>
                     <div className={`skillsContent ${activeSkills === 'frontEnd' ? 'skillsOpen' : 'skillsClose'}`}>
                         <div className="skillsHeader" onClick={() => toggleSkill('frontEnd')}>
@@ -37,7 +37,7 @@ const Skills = () => {
                             </div>
                             <div className="skillsData">
                                 <div className="skillsTitles">
-                                    <h3 className="skillsName">Taiwind CSS</h3>
+                                    <h3 className="skillsName">Tailwind CSS</h3>
                                     <span className='skillsNumber'>60%</span>
                                 </div>
                                 <div className="skillsBar">
@@ -46,7 +46,7 @@ const Skills = () => {
                             </div>
                             <div className="skillsData">
                                 <div className="skillsTitles">
-                                    <h3 className="skillsName">Javascript</h3>
+                                    <h3 className="skillsName">JavaScript</h3>
                                     <span className='skillsNumber'>70%</span>
                                 </div>
                                 <div className="skillsBar">
@@ -75,7 +75,7 @@ const Skills = () => {
                         <div className="skillsList ulGrid">
                             <div className="skillsData">
                                 <div className="skillsTitles">
-                                    <h3 className="skillsName">Nodejs</h3>
+                                    <h3 className="skillsName">Node.js</h3>
                                     <span className='skillsNumber'>30%</span>
                                 </div>
                                 <div className="skillsBar">
@@ -84,7 +84,7 @@ const Skills = () => {
                             </div>
                             <div className="skillsData">
                                 <div className="skillsTitles">
-                                    <h3 className="skillsName">Expressjs</h3>
+                                    <h3 className="skillsName">Express.js</h3>
                                     <span className='skillsNumber'>25%</span>
                                 </div>
                                 <div className="skillsBar">
@@ -93,7 +93,7 @@ const Skills = () => {
                             </div>
                             <div className="skillsData">
                                 <div className="skillsTitles">
-                                    <h3 className="skillsName">Mongodb</h3>
+                                    <h3 className="skillsName">MongoDB</h3>
                                     <span className='skillsNumber'>40%</span>
                                 </div>
                                 <div className="skillsBar">
@@ -104,7 +104,7 @@ const Skills = () => {
                     </div>
                 </div>
                 <div>
-                <div className={`skillsContent ${activeSkills === 'DigitalMarketing' ? 'skillsOpen' : 'skillsClose'}`}>
+                    <div className={`skillsContent ${activeSkills === 'DigitalMarketing' ? 'skillsOpen' : 'skillsClose'}`}>
                         <div className="skillsHeader" onClick={() => toggleSkill('DigitalMarketing')}>
                             <PiBracketsCurlyBold className='skillsIcon' />
                             <div>
@@ -157,4 +157,4 @@ const Skills = () => {
     )
 }
 
-export default Skills
+export default Skills;

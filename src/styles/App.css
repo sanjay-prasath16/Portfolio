@@ -298,6 +298,8 @@
 
     .skillsList {
         @apply gap-x-6 pl-11;
+        transition: height 0.4s ease;
+        overflow: hidden; /* Hide the content when the height is set to 0 */
     }
 
     .skillsTitles {
@@ -367,11 +369,12 @@
 
     .skillsOpen .skillsList {
         @apply mb-mb205;
-        height: max-content;
+        height: max-content; /* Ensures the height expands to fit the content */
     }
 
     .skillsClose .skillsList {
         height: 0;
+        padding-bottom: 0; /* Remove any padding to ensure no space is taken */
     }
 
     .skillsOpen .skillsArrow {
