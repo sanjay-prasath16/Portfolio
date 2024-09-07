@@ -14,8 +14,8 @@ const About = () => {
                 <p className="aboutDescription">I am a passionate and dedicated developer specializing in front-end technologies with a strong foundation in MERN stack development. As a fresher, I bring a fresh perspective and eagerness to contribute to innovative projects, constantly striving to enhance my skills and deliver exceptional results.</p>
                 <div className="aboutInfo">
                     <div>
-                        <span className='aboutInfoTitle'>02</span>
-                        <span className="aboutInfoName">Years <br />Experience</span>
+                        <span className='aboutInfoTitle'>08</span>
+                        <span className="aboutInfoName">Months <br />Experience</span>
                     </div>
                     <div>
                         <span className='aboutInfoTitle'>02</span>
