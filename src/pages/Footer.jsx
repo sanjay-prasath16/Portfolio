@@ -30,7 +30,6 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <p className="footerCopy">&#169; Bedimcode. All rights reserved</p>
       </div>
     </footer>
   )
