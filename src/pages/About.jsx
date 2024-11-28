@@ -9,7 +9,7 @@ const About = () => {
         <h2 className="sectionTitle">About Me</h2>
         <span className="sectionSubtitle">My Introduction</span>
         <div className="aboutContainer container ulGrid">
-            <img src={MyImg} alt="" className="aboutImg" />
+            <img src={MyImg} alt="" className="aboutImg pointer-events-none" onContextMenu={(e) => e.preventDefault()} />
             <div className="aboutData">
                 <p className="aboutDescription">I am a passionate and dedicated developer specializing in front-end technologies with a strong foundation in MERN stack development. As a fresher, I bring a fresh perspective and eagerness to contribute to innovative projects, constantly striving to enhance my skills and deliver exceptional results.</p>
                 <div className="aboutInfo">

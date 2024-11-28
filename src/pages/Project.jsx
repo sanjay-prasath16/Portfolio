@@ -23,18 +23,20 @@ const Project = () => {
           <Swiper
             effect={'coverflow'}
             grabCursor={true}
-            centeredSlides={true}
+            centeredSlides={false}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
             }}
             loop={true}
             slidesPerView={3}
+            keyboard={{ enabled: true }}
             coverflowEffect={{
               rotate: 0,
               stretch: 0,
               depth: 100,
               modifier: 1.5,
+              slideShadows: false,
             }}
             pagination={{ el: '.swiper-pagination', clickable: true }}
             navigation={{

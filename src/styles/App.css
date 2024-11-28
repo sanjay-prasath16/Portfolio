@@ -235,7 +235,7 @@
 
 @layer base {
     .aboutImg {
-        @apply w-52 justify-self-center;
+        @apply justify-self-center -mt-10;
         border-radius: .5rem;
     }
 
@@ -369,12 +369,12 @@
 
     .skillsOpen .skillsList {
         @apply mb-mb205;
-        height: max-content; /* Ensures the height expands to fit the content */
+        height: max-content;
     }
 
     .skillsClose .skillsList {
         height: 0;
-        padding-bottom: 0; /* Remove any padding to ensure no space is taken */
+        padding-bottom: 0;
     }
 
     .skillsOpen .skillsArrow {
@@ -523,7 +523,7 @@
     }
 
     .tranding-slider-control {
-        @apply relative flex items-center justify-center top-4;
+        @apply relative flex overflow-hidden;
     }
 
     .tranding-slider-control .swiper-button-next {
