@@ -6,7 +6,7 @@
 
 @layer base {
     * {
-        @apply box-border p-0 m-0;
+        @apply box-border md:p-0 md:m-0;
     }
 
     html {
@@ -14,7 +14,7 @@
     }
 
     body {
-        @apply mt-0 ml-0 mr-0 mb-headerHeight font-bodyFont text-normalFontSize bg-bodyColor text-textColor;
+        @apply font-bodyFont text-normalFontSize bg-bodyColor text-textColor m-5;
     }
 
     h1,h2,h3,h4 {
@@ -74,7 +74,7 @@
     }
 
     .navLogo,.navToggle {
-        @apply text-titleColor font-fontMedium
+        @apply text-titleColor font-fontMedium ml-2;
     }
 
     .navLogo:hover {
@@ -659,11 +659,11 @@
 
 @layer base {
     .footer {
-        @apply pt-8
+        @apply pt-8 -m-5;
     }
 
     .footerContainer {
-        @apply gap-y-14;
+        @apply gap-y-14 p-3;
     }
 
     .footerBg {
@@ -804,10 +804,6 @@
         @apply ml-auto mr-auto;
     }
 
-    body {
-        @apply m-0;
-    }
-
     .section {
         padding: 6rem 0 2rem;
     }
@@ -828,6 +824,10 @@
     .nav {
         @apply gap-x-4;
         height: 4.5rem;
+    }
+
+    .navLogo {
+        @apply ml-0;
     }
 
     .icon, .navClose, .navToggle {
