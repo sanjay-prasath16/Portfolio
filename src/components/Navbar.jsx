@@ -61,7 +61,6 @@ const Navbar = () => {
                     <FaTimes className='navClose' id='nav-close' onClick={closeNavMenu} />
                 </div>
                 <div className='navBtns'>
-                    
                     <div className={`navToggle ${isOpen ? 'hidden' : 'block'}`} id='navToggle' onClick={toggleNavMenu}>
                         <GrAppsRounded />
                     </div>
@@ -71,4 +70,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;

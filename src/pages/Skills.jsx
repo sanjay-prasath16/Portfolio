@@ -15,7 +15,7 @@ const Skills = () => {
         <section className="skills section" id="skills">
             <h2 className="sectionTitle">Skills</h2>
             <section className="sectionSubtitle">My Tech Stack</section>
-            <div className="skillsContainer container ulGrid">
+            <div className="skillsContainer container w-[90%] ulGrid">
                 <div>
                     <div className={`skillsContent ${activeSkills === 'frontEnd' ? 'skillsOpen' : 'skillsClose'}`}>
                         <div className="skillsHeader" onClick={() => toggleSkill('frontEnd')}>

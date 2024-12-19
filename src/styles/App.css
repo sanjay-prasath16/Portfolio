@@ -46,15 +46,11 @@
     }
 
     .sectionSubtitle {
-        @apply block text-smallFontSize mb-mb3
+        @apply block text-smallFontSize mb-mb3;
     }
 
     .sectionTitle,.sectionSubtitle {
         @apply text-center;
-    }
-
-    .container {
-        @apply max-w-3xl ml-mb105 mr-mb105;
     }
 
     .ulGrid {
@@ -74,7 +70,6 @@
     }
 
     .nav {
-        max-width: 968px;
         @apply h-headerHeight flex sm:justify-between items-center;
     }
 
@@ -649,6 +644,7 @@
         .container.contactContainer {
             grid-template-columns: 1fr;
             gap: 2rem;
+            margin: 0 auto;
         }
     }
 
