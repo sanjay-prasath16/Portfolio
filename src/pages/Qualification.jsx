@@ -21,10 +21,10 @@ const Qualification = () => {
                 <div className="qualificationContent">
                     <div className="qualificationData">
                         <div>
-                            <h3 className="qualificationTitle">Front End Developer</h3>
-                            <span className="qualificationSubtitle">Kriyaetive</span>
+                            <h3 className="qualificationTitle">AI MERN Stack Developer</h3>
+                            <span className="qualificationSubtitle">AspireIT</span>
                             <div className="qualificationCalendar">
-                                <FaRegCalendarAlt className="calendar" />2024 - 2025
+                                <FaRegCalendarAlt className="calendar" />2024 - Present
                             </div>
                         </div>
                         <div>
@@ -38,6 +38,15 @@ const Qualification = () => {
                             <span className="qualificationRounder"></span>
                             <span className="qualificationLine"></span>
                         </div>
+                        <div>
+                            <h3 className="qualificationTitle">Front End Developer</h3>
+                            <span className="qualificationSubtitle">Kriyaetive</span>
+                            <div className="qualificationCalendar">
+                                <FaRegCalendarAlt className="calendar" />2023 - 2024
+                            </div>
+                        </div>
+                    </div>
+                    <div className="qualificationData">
                         <div>
                             <h3 className="qualificationTitle">Computer Science and Engineering</h3>
                             <span className="qualificationSubtitle">Kongunadu College of Engineering and Technology</span>
@@ -45,15 +54,6 @@ const Qualification = () => {
                                 <FaRegCalendarAlt className="calendar" />2021 - 2025
                             </div>
                         </div>
-                    </div>
-                    <div className="qualificationData">
-                        <div>
-                            <h3 className="qualificationTitle">Higher Secondary School</h3>
-                            <span className="qualificationSubtitle">{'Santa Maria Matriculation Higher Secondary School (84%)'}</span>
-                            <div className="qualificationCalendar">
-                                <FaRegCalendarAlt className="calendar" />2019 - 2020
-                            </div>
-                        </div>
                         <div>
                             <span className="qualificationRounder"></span>
                             <span className="qualificationLine"></span>
@@ -62,15 +62,28 @@ const Qualification = () => {
                     <div className="qualificationData">
                         <div></div>
                         <div>
-                            {/* <span className="qualificationLine"></span> */}
+                            <span className="qualificationLine"></span>
                             <span className="qualificationRounder"></span>
                         </div>
+                        <div>
+                            <h3 className="qualificationTitle">Higher Secondary School</h3>
+                            <span className="qualificationSubtitle">{'Santa Maria Matriculation Higher Secondary School (84%)'}</span>
+                            <div className="qualificationCalendar">
+                                <FaRegCalendarAlt className="calendar" />2019 - 2020
+                            </div>
+                        </div>
+                    </div>
+                    <div className="qualificationData">
                         <div>
                             <h3 className="qualificationTitle">Secondary School Leaving Certificate</h3>
                             <span className="qualificationSubtitle">{'Kingsley Matriculation School (83%)'}</span>
                             <div className="qualificationCalendar">
                                 <FaRegCalendarAlt className="calendar" />2016 - 2017
                             </div>
+                        </div>
+                        <div>
+                            <span className="qualificationRounder"></span>
+                            {/* <span className="qualificationLine"></span> */}
                         </div>
                     </div>
                 </div>

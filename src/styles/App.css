@@ -392,6 +392,10 @@
 /* Qualification */
 
 @layer base {
+  .qualification {
+    @apply -mt-44;
+  }
+
   .qualificationTabs {
     @apply flex justify-evenly mb-mb2;
   }
@@ -469,132 +473,6 @@
 /* Projects */
 
 @layer base {
-  /* .container {
-        border: none;
-    }
-
-    .section-heading {
-        @apply text-h1FontSize font-semibold mb-mb25 text-black text-center;
-    }
-
-    @media (max-width: 1440px) {
-        #tranding {
-            padding: 7rem 0;
-        }
-    }
-
-    #tranding .tranding-slider {
-        @apply relative;
-        height: 52rem;
-        padding: 2rem 0;
-    }
-
-    @media (max-width: 500px) {
-        #tranding .tranding-slider {
-            height: 45rem;
-        }
-    }
-
-    .tranding-slide {
-        @apply relative;
-        width: 37rem;
-        height: 30rem;
-    }
-
-    @media (max-width: 500px) {
-        .tranding-slide {
-            width: 28rem !important;
-            height: 36rem !important;
-        }
-
-        .tranding-slide .tranding-slide-img img {
-            width: 28rem !important;
-            height: 36rem !important;
-        }
-    }
-
-    .tranding-slide .tranding-slide-img img {
-        width: 37rem;
-        height: 30rem;
-        border-radius: 2rem;
-        object-fit: cover;
-    }
-
-    .tranding-slide .tranding-slide-content {
-        @apply absolute left-0 top-0 right-0 bottom-0;
-    }
-
-    #tranding .tranding-slide .swiper-slide-shadow-left,
-    #tranding .tranding-slide .swiper-slide-shadow-right {
-        display: none !important;
-    }
-
-    .tranding-slider-control {
-        @apply relative flex overflow-hidden;
-    }
-
-    .tranding-slider-control .swiper-button-next {
-        left: 58% !important;
-        transform: translateX(-58%) !important;
-    }
-
-    @media (max-width: 990px) {
-        .tranding-slider-control .swiper-button-next {
-            left: 70% !important;
-            transform: translateX(-70%) !important;
-        }
-    }
-
-    @media (max-width: 450px) {
-        .tranding-slider-control .swiper-button-next {
-            left: 80% !important;
-            transform: translateX(-80%) !important;
-        }
-    }
-
-    @media (max-width: 990px) {
-        .tranding-slider-control .swiper-button-prev {
-            left: 30% !important;
-            transform: translateX(-30%) !important;
-        }
-    }
-
-    @media (max-width: 450px) {
-        .tranding-slider-control .swiper-button-prev {
-            left: 20% !important;
-            transform: translateX(-20%) !important;
-        }
-    }
-
-    .tranding-slider-control .slider-arrow {
-        @apply w-14;
-        height: 3.5rem;
-        border-radius: 50%;
-        left: 42%;
-        transform: translateX(-42%);
-        filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
-    }
-
-    .tranding-slider-control .slider-arrow ion-icon {
-        @apply text-bigFontSize;
-        color: #222224;
-    }
-
-    .tranding-slider-control .slider-arrow::after {
-        content: '';
-    }
-
-    .tranding-slider-control .swiper-pagination {
-        @apply relative w-60 mt-6;
-    }
-
-    .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
-        filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
-    }
-
-    .tranding-slider-control .swiper-pagination .swiper-pagination-active {
-        background: #ec994b;
-    } */
     .projects-section {
         padding: 2rem;
       }
@@ -1054,12 +932,6 @@
 /* Larger Devices */
 
 @media screen and (min-width: 1024px) {
-  .header,
-  .main,
-  .footerContainer {
-    @apply p-0;
-  }
-
   .home {
     @apply pt-16;
   }
