@@ -1,6 +1,6 @@
 import { MdCloudDownload } from "react-icons/md";
 import cv from '../cv/SanjayPrasathResume.pdf'
-import MyImg from '../assets/SanjayPrasath.png'
+import MyImg from '../assets/aboutUs.png'
 import '../styles/App.css'
 
 const About = () => {
